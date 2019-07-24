@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>FCC - Survey Form</title>
+    <link href="index.css" rel="stylesheet" />
+  </head>
+  <body>
+    <h1 id="title">Survey Form</h1>
+    <form id="survey-form">
+      <p id="description">
+        Fill in this form to participate in Mars Exploration Mission.
+      </p>
+      <section id="form">
+        <div class="form-group">
+          <label class="label" for="name" id="name-label">* Name:</label>
+          <input
+            class="form-input"
+            type="text"
+            id="name"
+            placeholder="Enter your full name"
+            required
+          />
+        </div>
+        <div class="form-group">
+          <label class="label" for="email" id="email-label">* Email:</label>
+          <input
+            class="form-input"
+            type="email"
+            id="email"
+            placeholder="yourmail@example.com"
+            required
+          />
+        </div>
+        <div class="form-group">
+          <label class="label" for="age" id="number-label">* Age:</label>
+          <input
+            class="form-input"
+            type="number"
+            id="number"
+            placeholder="Age"
+            min="21"
+            max="45"
+            required
+          />
+        </div>
+        <div class="form-group">
+          <label class="label" for="dropdown">* Your Future Role:</label>
+          <select class="form-input" id="dropdown">
+            <option value="">--- Choose your future role ---</option>
+            <option value="student">Student</option>
+            <option value="biologist">Biologist</option>
+            <option value="geologist">Geologist</option>
+            <option value="physicist">Physicist</option>
+            <option value="engineer">Engineer</option>
+            <option value="astrologist">Astrologist</option>
+          </select>
+        </div>
+        <div class="form-group">
+          <div class="label">* Choose your Mission Team:</div>
+          <div class="form-input form-input-mission">
+            <div class="mission-input">
+              <input id="utopia" type="radio" name="team" value="utopia" />
+              <label for="utopia">Utopia Planitia Team</label>
+            </div>
+            <div class="mission-input">
+              <input id="hellas" type="radio" name="team" value="hellas" />
+              <label for="hellas">Hellas Planitia Team</label>
+            </div>
+            <div class="mission-input">
+              <input id="arcadia" type="radio" name="team" value="arcadia" />
+              <label for="arcadia">Arcadia Planitia Team</label>
+            </div>
+          </div>
+        </div>
+        <div class="form-group">
+          <div class="label">* Starter Package:</div>
+          <div class="form-input form-input-package">
+            <div class="package-input">
+              <input type="checkbox" name="suit" id="suit" value="suit" />
+              <label for="suit">Environmental Suit</label>
+            </div>
+            <div class="package-input">
+              <input type="checkbox" name="rover" id="rover" value="rover" />
+              <label for="rover">Martec Rover RX-400</label>
+            </div>
+            <div class="package-input">
+              <input type="checkbox" name="pass" id="pass" value="pass" />
+              <label for="pass">All Stars Season Pass</label>
+            </div>
+          </div>
+        </div>
+        <div class="form-group">
+          <label class="label" for="comments">Your Comments:</label>
+          <textarea
+            class="form-input"
+            rows="5"
+            id="comments"
+            name="comments"
+          ></textarea>
+        </div>
+      </section>
+      <button type="submit" id="submit">Submit</button>
+    </form>
+  </body>
+</html>
